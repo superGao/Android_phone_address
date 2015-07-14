@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:superGao="http://schemas.android.com/apk/res/com.superGao.phoneaddress"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneAddressActivity"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#33ff33"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:text="电话归属地" >
+    </TextView>
+    
+    <com.superGao.ui.SettingItemView
+        android:id="@+id/siv_showAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        superGao:title="电话归属地显示设置"
+        superGao:desc_off="已关闭电话归属地显示"
+        superGao:desc_on="已开启电话归属地显示"
+        />
+    
+    <com.superGao.view.SettingClickView
+        android:id="@+id/scv_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+     <com.superGao.view.SettingClickView
+        android:id="@+id/scv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_selector"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:gravity="center"
+        android:drawablePadding="5dp"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:onClick="numberQuery"
+        android:clickable="true"
+        android:text="电话归属地查询" />
+
+</LinearLayout>
